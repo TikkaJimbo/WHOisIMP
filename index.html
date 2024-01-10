@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WHO is the Imposter?</title>
+</head>
+<body>
+    <div id="mainContainer">
+        <h1>WHO is the imposter?</h1>
+        <div id="playerNameDiv">
+            <label for="playerName">Enter Your Name: </label>
+            <input type="text" id="playerName">
+            <button onclick="joinGame()">Join Game</button>
+        </div>
+        <div id="gameContainer" class="hidden">
+            <h2 id="gameMasterMessage"></h2>
+            <div id="inputWords" class="hidden">
+                <label for="mainWord">Main Word:</label>
+                <input type="text" id="mainWord">
+                <label for="imposterWord">Imposter Word:</label>
+                <input type="text" id="imposterWord">
+                <button onclick="startGame()">Start Game</button>
+            </div>
+            <div id="result" class="hidden"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
